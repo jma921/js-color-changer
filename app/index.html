@@ -27,23 +27,29 @@
 <body>
   <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
- <div class="mainform">
-  <form>
-    First name:<br>
-    <input id="firstname" type="text" name="firstName"><br> Last name:<br>
-    <input type="text" name="lastname" id="lastname">
-    <input type="submit" id="submit" value="submit">
-  </form>
+    <![endif]-->    
+<div class="container-fluid">
+  <div class="col-md-12 text-center">
+    
+    <form>
+      <p>First name:</p>
+      <input id="firstname" type="text" name="firstName">
+      <p>Last Name</p>
+      <input type="text" name="lastname" id="lastname">
+      <p><input type="submit" id="submit" value="submit"></p>
+    </form>
+    
+    <div id="textOutput">
+    </div>
 
-  <div id="textOutput">
+    <button id="redButton">Red</button>
+    <button id="blueButton">Blue</button>
+    <button id="greenButton">Green</button>
+    <button id="orangeButton">Orange</button>
   </div>
+</div>
 
-  <button id="redButton">Red</button>
-  <button id="blueButton">Blue</button>
-  <button id="greenButton">Green</button>
-  <button id="orangeButton">Orange</button>
- </div>
+
   
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

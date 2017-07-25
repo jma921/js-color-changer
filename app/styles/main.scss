@@ -17,6 +17,11 @@ body {
   padding-bottom: 20px;
 }
 
+.mainform {
+  float: none;
+  margin: 0 auto;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -38,15 +43,7 @@ body {
   }
 }
 
-.mainform {
-  position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 
-    margin: auto;
-}
 
 /* Custom page footer */
 .footer {

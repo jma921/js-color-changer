@@ -60,18 +60,18 @@ label {
   padding-top: 2rem;
 }
 
-#redButton {
-  @include button-variant(white, $red, $red);
+.redButton {
+  @include button-variant(white, $red, white);
 }
 
-#blueButton {
-  @include button-variant(white, $blue, $blue);
+.blueButton {
+  @include button-variant(white, $blue, white);
 }
 
-#greenButton {
-  @include button-variant(white, $green, $green);
+.greenButton {
+  @include button-variant(white, $green, white);
 }
 
-#orangeButton {
-  @include button-variant(white, $orange, $orange);
+.orangeButton {
+  @include button-variant(white, $orange, white);
 }

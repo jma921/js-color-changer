@@ -4,6 +4,29 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+//variables
+$red: #c0392b;
+$blue: #2980b9;
+$green: #27ae60;
+$orange: #e67e22;
+$sans: 'Open Sans', sans-serif;
+
+.red {
+  color: $red;
+}
+
+.blue {
+  color: $blue;
+}
+
+.green {
+  color: $green;
+}
+
+.orange {
+  color: $orange;
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -15,6 +38,7 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: $sans;
 }
 
 .mainform {
@@ -22,79 +46,32 @@ body {
   margin: 0 auto;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+label {
+  font-weight: 400;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+#textOutput {
+  font-size: 6rem;
+  font-weight: 800;
+  padding-bottom: 2rem;
 }
 
-
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.buttons {
+  padding-top: 2rem;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+#redButton {
+  @include button-variant(white, $red, $red);
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+#blueButton {
+  @include button-variant(white, $blue, $blue);
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
+#greenButton {
+  @include button-variant(white, $green, $green);
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+#orangeButton {
+  @include button-variant(white, $orange, $orange);
 }

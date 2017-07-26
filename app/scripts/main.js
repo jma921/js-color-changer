@@ -18,12 +18,6 @@ function changeBackgroundColor(color) {
   $("p").css("color", "white");
 }
 
-$("#flatClearable").spectrum({
-  flat: true,
-  showInput: true,
-  allowEmpty: true
-});
-
 $("#redButton").click(() => changeTextColor("red"));
 $("#blueButton").click(() => changeTextColor("blue"));
 $("#greenButton").click(() => changeTextColor("green"));

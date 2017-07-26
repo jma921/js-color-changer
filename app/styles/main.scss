@@ -75,3 +75,7 @@ label {
 .orangeButton {
   @include button-variant(white, $orange, white);
 }
+
+.full-spectrum .sp-palette {
+  max-width: 200px;
+}

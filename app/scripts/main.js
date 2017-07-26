@@ -5,7 +5,7 @@ $("form").submit(e => {
   $("#textOutput").html(firstName);
   $("#textOutput").append(" " + lastName);
   // document.getElementById('textOutputJS').innerHTML=firstName;
-  $('form')[0].reset();
+  $("form")[0].reset();
 });
 
 function changeTextColor(color) {
@@ -14,9 +14,15 @@ function changeTextColor(color) {
 }
 
 function changeBackgroundColor(color) {
-  $('body').css("background-color", color)
-  $('p').css('color', 'white')
+  $("body").css("background-color", color);
+  $("p").css("color", "white");
 }
+
+$("#flatClearable").spectrum({
+  flat: true,
+  showInput: true,
+  allowEmpty: true
+});
 
 $("#redButton").click(() => changeTextColor("red"));
 $("#blueButton").click(() => changeTextColor("blue"));
